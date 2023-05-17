@@ -1,4 +1,0 @@
-hola buenas tardes
-esto es un fichero de prueba
-con diferentes longitudes de linea
-para poder ver si consigo leer un poquito

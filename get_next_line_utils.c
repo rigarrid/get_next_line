@@ -6,10 +6,17 @@
 /*   By: rigarrid <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/11 15:40:49 by rigarrid          #+#    #+#             */
-/*   Updated: 2023/05/11 16:19:58 by rigarrid         ###   ########.fr       */
+/*   Updated: 2023/05/17 14:54:14 by rigarrid         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "get_next_line.h"
+
+/*
+ * Searches for the first occurrence of a character C in the string S. 
+ * It returns a pointer to the located character or NULL if the character 
+ * is not found. It uses a while loop to iterate through each character 
+ * of the string until it finds the desired character.
+ */
 
 char	*ft_strchr(char const *s, int c)
 {
@@ -21,6 +28,12 @@ char	*ft_strchr(char const *s, int c)
 		return (0);
 }
 
+/*
+ * Calculates the length of a string STR by counting the number of characters 
+ * until it reaches the null terminator ('\0'). It returns the length as 
+ * a size_t value.
+*/
+
 size_t	ft_strlen(char const *str)
 {
 	size_t	con;
@@ -30,6 +43,12 @@ size_t	ft_strlen(char const *str)
 		con++;
 	return (con);
 }
+
+/*
+ * Creates a duplicate of the input string STR. It allocates memory 
+ * for the duplicate string, copies the characters from the original string 
+ * to the duplicate, and returns a pointer to the duplicate string.
+*/
 
 char	*ft_strdup(char const *str)
 {
@@ -45,6 +64,14 @@ char	*ft_strdup(char const *str)
 	*ptr = 0;
 	return (dup);
 }
+
+/*
+ * Concatenates two strings S1 and S2 into a new string. It first allocates 
+ * memory to hold the concatenated string by calculating the combined length 
+ * of S1 and S2, then copies the characters from S1 and S2 to the new string. 
+ * It also frees the memory allocated for S1 and returns the new concatenated 
+ * string.
+*/
 
 char	*ft_strjoinfree(char *s1, char const *s2)
 {
@@ -74,6 +101,14 @@ char	*ft_strjoinfree(char *s1, char const *s2)
 	free(s1);
 	return (result);
 }
+
+/*
+ * Extracts a substring from a string STR starting at index START 
+ * and with a maximum size of SIZE. It allocates memory for the substring, 
+ * copies the characters from the original string to the substring, 
+ * and returns a pointer to the substring. If START is greater than or equal 
+ * to the length of the string, it returns an empty string.
+ */
 
 char	*ft_substr(const char *str, unsigned int start, size_t size)
 {

@@ -6,7 +6,7 @@
 /*   By: rigarrid <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/11 15:37:59 by rigarrid          #+#    #+#             */
-/*   Updated: 2023/05/11 16:26:00 by rigarrid         ###   ########.fr       */
+/*   Updated: 2023/05/17 14:04:24 by rigarrid         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,5 @@ char	*ft_strdup(char const *s1);
 char	*ft_strjoinfree(char *s1, char const *s2);
 char	*ft_substr(char const *str, unsigned int start, size_t size);
 char	*get_next_line(int fd);
-
 
 #endif
